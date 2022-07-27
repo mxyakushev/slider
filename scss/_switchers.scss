@@ -1,0 +1,28 @@
+.previous, .next {
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    z-index: 100;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.previous {
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.5228368935464811) 0%, rgba(0,0,0,0.24272484872855393) 0%, rgba(255,255,255,0) 100%);
+}
+
+.next {
+    right: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.5228368935464811) 0%, rgba(0,0,0,0.24272484872855393) 0%, rgba(255,255,255,0) 100%);
+}
+
+#sl1:checked ~ .switcher1,
+#sl2:checked ~ .switcher2,
+#sl3:checked ~ .switcher3{
+    display: flex;
+}

@@ -1,0 +1,24 @@
+.navigation-dots {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.dots {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 2px;
+}
+
+#sl1:checked ~ .navigation-dots #dot1,
+#sl2:checked ~ .navigation-dots #dot2,
+#sl3:checked ~ .navigation-dots #dot3{
+    background-color: #fff;
+}
